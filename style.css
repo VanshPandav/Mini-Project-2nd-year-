@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  width: 100%;
+}
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  left: 0;
+  padding: 1vw;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  margin: auto;
+}
+
+.navbar-content {
+  margin: auto;
+}
+
+.navbar-content a {
+  text-decoration: none;
+  color: rgb(206, 206, 206);
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 125%;
+  margin: 2vw;
+}
+
+.navbar a:hover {
+  color: white;
+  transition: ease 0.2s;
+}
+
+/* #company-name {
+    font-style: italic;
+    position: absolute;
+    right: 0;
+    margin-right: 5vw;
+    display: none;
+} */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#home {
+  min-height: 100vh;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+  /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.banner {
+  background-image: url("./images/best-banner.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(6px);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  z-index: -1;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.banner-content {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  width: 40%;
+  padding: 2vw;
+  border: 3px solid #f1f1f1;
+  color: white;
+  z-index: -1;
+}
+
+.six-wheels {
+  font-size: 225%;
+  font-style: italic;
+}
+
+#companies {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("./images/extremenew-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  position: relative;
+}
+
+.companies-holder {
+  /* background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.9);  */
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  padding: 1vw;
+  margin-top: 3vw;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companies-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 200%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  display: block;
+  padding-top: 5vw;
+  color: white;
+}
+
+/* .cards-row {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+  justify-content: center;
+}
+
+/* .company {
+  border: 10px solid rgb(212, 207, 216);
+  background-color: rgb(212, 207, 216);
+  padding: 2vw;
+  width: 13vw;
+  height: 6.5vw;
+  margin: auto;
+  position: relative;
+  margin: auto;
+  border-radius: 8px;
+} */
+
+/* .company p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}  */
+
+/* .card-bmw {
+  background-image: url("./Car_image/");
+}
+
+.card-audi {
+  background-image: url("./images/logos/audi-logo.png");
+}
+
+.card-mb {
+  background-image: url("./images/logos/mercedes-logo.png");
+}
+
+.card-lr {
+  background-image: url("./images/logos/lr-logo.png");
+}
+
+.card-jaguar {
+  background-image: url("./images/logos/jaguar-logo.png");
+}
+
+.card-volvo {
+  background-image: url("./images/logos/volvo-logo.png");
+}
+
+.card-bmw,
+.card-audi,
+.card-mb,
+.card-lr,
+.card-jaguar,
+.card-volvo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -ms-background-size: contain;
+  image-rendering: optimizeQuality;
+  box-shadow: rgb(0, 0, 0) 0 0 8px;
+} */
+
+.feedback h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 200%;
+}
+
+.feedback p {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150%;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.feedback-form input {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw; 
+}
+
+#form-name, #form-email, #form-title, #form-category, #form-description {
+  width: 40vw;
+  height: 2.5vw;
+  border: 1px solid rgb(194, 194, 194);
+  padding: 1vw;
+  font-family: 'Nunito', sans-serif;
+  font-size: 100%;
+}
+
+.feedback-form label {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 110%;
+    text-align: left;
+}
+
+.feedback-input {
+  margin: 0.5vw;
+  gap: 0.5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-submit {
+  width: 7vw;
+  height: 2.5vw;
+  text-align: center;
+  margin: auto;
+  font: 'Nunito', sans-serif;
+  font-size: 110%;
+  border: none;
+  border-radius: 5px;
+  background-color: purple;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#form-submit:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
